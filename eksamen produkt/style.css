@@ -1,0 +1,162 @@
+
+.some{
+    width: 55px;
+    height: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    /*størrelse på some ikoner, og så margin selv følger med størrelse*/
+}
+
+.stol{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;}
+    /*så billedet passer ind i navbaren*/
+
+.forbillede{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    /*for at få billedet i midten og så det fylder hele skærmen i bredde
+    og derefter følger højde med automatisk*/
+}
+.mig{
+    text-align: center;
+    width: 100%;
+    height: auto;}
+    /* så billedets længde passer hele telefonen
+    */
+
+
+.info{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 4%;
+    color: #00010F;
+    padding: 5%;
+    background-color:#90D1D9;
+/*sætte i midten og font størrelse
+lyseblå ramme rundt om*/}
+
+.overskrift{    
+    text-align: center;
+    margin: 4%;
+    color: white;
+    padding: 5%;
+    background-color:#36383D;}
+    /*for at centrere tekst, og give 
+    den grå ramme rundt om overskriften.
+    og tekst farve*/
+
+
+ul{
+     
+        text-align: center;
+        }
+        /*for at sætte dem i midten*/
+ li a{
+display: block;
+padding: 15px;
+background-color: #006A8E;
+color: rgb(255, 255, 255);
+font-size: 2em;}
+/*give tekst og baggrund farve, og padding so der mere fylde
+på den blå kant*/
+
+li{
+    display: inline-block
+    ;
+}
+/*så nav baren er på række*/
+
+body{
+    background-color: #C0C1CC;
+    font-family: 'Source Sans Pro', sans-serif;}
+/*farve og font*/
+
+@media only screen and (min-width: 768px)
+{
+    .footer { 
+        grid-area: header;
+        grid-column: 1 /6;
+        grid-row: 1 / 2;
+    }
+    .intro { 
+        grid-area: titel;
+        grid-column: 1 / 6;
+        grid-row: 2 / 4;
+        }
+
+    .into2 {
+        grid-area: info;
+        grid-column: 5 / 6;
+        grid-row:  7 / 8 ;}
+        
+    .into3 {
+            grid-area: info;
+            grid-column: 5 / 6;
+            grid-row:  5 / 6;
+        }
+    .into4 {
+            grid-area: info;
+            grid-column: 5 / 6;
+            grid-row: 5 / 6;
+        }
+        /*
+        CSS grid for at sætte tingene istand, 
+        så den passer bedre til pc
+        */
+    
+
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+        height: 700px;
+        margin: 1px;
+        /* for at lave grid, 
+        sætte afstand imellem tingene i griddet.
+        padding så der er lidt afstand fra kanten.
+        højden af grid
+        margin for at skubbe den lidt væk fra kanten*/
+    }
+    
+ 
+    .overskrift{  
+        font-size: 4em;  
+        text-align: center;
+        margin: 4%;
+        color: white;
+        padding: 5%;
+        background-color:#36383D;}
+        /*for at gøre teksten større så det ser bedre ud på desktop*/
+
+        .info{
+            font-size: 3em;
+            text-align: center;
+            margin: 4%;
+            color: #00010F;
+            padding: 5%;
+            background-color:#90D1D9;
+        /*sætte i midten og font størrelse*/}
+
+        .nav{text-align: center;}
+        /*sætte some nav i midten*/
+    .some{
+    width: 300Px;
+    height: 300px;
+    text-align: center;
+    }/*gøre some ikoner større på desktop*/
+
+    .mig{
+        width: 800Px;
+        height: 1600px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;}
+        /*
+        sætte billedet i midten, og ændre størrelse
+         så den passer bedre til desktop
+        */
+}
